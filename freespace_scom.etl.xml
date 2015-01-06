@@ -21,7 +21,7 @@
     
     <!-- write the script to insert to another database -->
     <script connection-id="mysqlDB">
-      INSERT INTO freespace_mb(Server_name, Drive_letter, MB_free, Time)
+      INSERT INTO FreeSpace_MB(Server_name, Drive_letter, MB_free, Time)
       VALUES (?PerfmonInstanceName, ?Path, ?SampleValue, ?TimeSampled);
     </script>
   </query>
@@ -37,7 +37,7 @@
     
     <!-- write the script to insert to another database -->
     <script connection-id="mysqlDB">
-      INSERT INTO freespace_percent(Server_name, Drive_letter, Free_space_Percentage, Time)
+      INSERT INTO FreeSpace_Percent(Server_name, Drive_letter, Free_space_Percentage, Time)
       VALUES (?PerfmonInstanceName, ?Path, ?SampleValue, ?TimeSampled);
     </script>
   </query>
